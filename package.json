@@ -1,6 +1,6 @@
 {
 	"name": "ameliance-react-scripts",
-	"version": "0.0.1",
+	"version": "0.0.101",
 	"description": "ameliance react scripts",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -11,6 +11,7 @@
 			"import": "./dist/index.mjs"
 		}
 	},
+	"sideEffects": false,
 	"files": [
 		"dist"
 	],

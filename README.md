@@ -46,6 +46,14 @@ react.splitTextByBr("Some\nfew\nlines");
 // </>
 ```
 
+```ts
+const isActiveClass = useActiveClass("some-class another-class");
+
+function SomeComponent() {
+	return <Link className={isActiveClass(link.path === path)} />;
+}
+```
+
 ### next
 
 ```ts
@@ -63,8 +71,10 @@ return next.api.generateResponseJsonSuccess({ userId: 1234567890 });
 ## History
 
 ```
+0.0.101 [2024_11_21]:
+   +: add useActiveClass
 
-0.0.100 [2024_11_19]:
+0.0.1 [2024_11_19]:
    +: add splitTextByBr
    +: add generateResponseJsonError
    +: add generateResponseJsonSuccess
